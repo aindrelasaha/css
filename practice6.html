@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            display: inline;
+        }
+        header{
+            background-color: rgb(24, 2, 2);
+            color: wheat;
+        }
+        .left{
+            float: left;
+            height: 344px;
+            width: 234px;
+            background-color: red;
+        }
+        .right{
+            float: right;
+            height: 344px;
+            width: 234px;
+
+            background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+    </div>
+    <div class="left">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia deleniti commodi quaerat! Necessitatibus fugit aperiam animi quisquam ad iusto ab reprehenderit hic deserunt mollitia reiciendis commodi pariatur recusandae nostrum, minus cumque quaerat temporibus illum.
+    </div>
+    <div class="right">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id natus molestiae ad, tempora unde deserunt consequuntur nostrum eum, aliquam aperiam magnam culpa dolore, aspernatur officiis. Laboriosam, quas a vitae commodi eos saepe minus accusantium.
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Layout with Float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: lightblue;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .container {
+            overflow: hidden;
+            padding: 20px;
+        }
+        .container div {
+            width: 45%;
+            padding: 20px;
+            margin: 10px;
+            float: left;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div>Div 1</div>
+        <div>Div 2</div>
+    </div>
+</body>
+</html>

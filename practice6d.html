@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Flexbox Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            background-color: lightblue;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+        }
+        .header {
+            background-image: url('https://via.placeholder.com/150');
+            background-size: cover;
+            padding: 50px;
+            text-align: center;
+            color: white;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .main-content div {
+            width: 30%;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">L</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Header with Background Image -->
+    <div class="header">
+        <h1>Big Image</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div>Content 1</div>
+        <div>Content 2</div>
+        <div>Content 3</div>
+    </div>
+</body>
+</html>
