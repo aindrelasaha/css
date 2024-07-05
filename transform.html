@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 455px;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            transform: translate(134px, 56px) rotate(45deg);
+            transform-origin: 0;
+           /* transform: scaleX(8);
+            transform: scaleY(8);
+            transform: skew(4deg, 4deg);
+            transform: rotateX(45deg); */
+        }
+        img:hover{
+            width: 56px;
+
+        }
+
+        img{
+            width: 455px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s;
+            transition: width 1s ease-in-out, height 4s ease-in;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+       <div class="box">
+    <img src="https://images.unsplash.com/photo-1594904351111-a072f80b1a71?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+       </div>
+       <button id="btn">toggle</button>
+    </div>
+</body>
+<script>
+    btn.addEventListener("click", ()=>{
+        myImage.style.width="546px";
+    })
+</script>
+</html>
