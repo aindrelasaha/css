@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress-container {
+            width: 100%;
+            background-color: #ccc;
+            height: 3px;
+            overflow: hidden;
+        }
+        .progress {
+            background-color: red;
+            height: 3px;
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            height: 122px;
+            background-color: black;
+        }
+        main {
+            height: 899px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress" id="progress-bar"></div>
+    </div>
+    <header></header>
+    <main></main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var progressBar = document.getElementById('progress-bar');
+            progressBar.style.width = '100vw';
+        });
+    </script>
+</body>
+</html>

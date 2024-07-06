@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .slider {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 3s infinite;
+        }
+        .slides img {
+            width: 100%;
+            border-right: 2px solid #ccc;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(0%); }
+            40% { transform: translateX(-100%); }
+            73% { transform: translateX(-100%); }
+            80% { transform: translateX(-200%); }
+            100% { transform: translateX(-200%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img src="https://via.placeholder.com/600x300/FF0000/FFFFFF?text=Image+1" alt="Image 1">
+            <img src="https://via.placeholder.com/600x300/00FF00/FFFFFF?text=Image+2" alt="Image 2">
+            <img src="https://via.placeholder.com/600x300/0000FF/FFFFFF?text=Image+3" alt="Image 3">
+        </div>
+    </div>
+</body>
+</html>
